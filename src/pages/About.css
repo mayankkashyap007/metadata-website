@@ -1,0 +1,80 @@
+.about-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-imgs { position: relative; }
+.ai-main { border-radius: 16px; overflow: hidden; height: 480px; box-shadow: var(--shadow); }
+.ai-main img { width: 100%; height: 100%; object-fit: cover; }
+.ai-badge {
+  position: absolute;
+  bottom: 32px; left: -24px;
+  background: var(--gradient-blue);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex; align-items: center; gap: 12px;
+  color: #fff;
+  box-shadow: var(--shadow-blue);
+}
+.ai-badge i { font-size: 28px; }
+.badge-num { display: block; font-family: var(--font-display); font-size: 24px; font-weight: 800; }
+.badge-txt { font-size: 12px; font-weight: 600; opacity: 0.85; }
+
+.about-text { color: var(--text-body); margin-bottom: 28px; }
+.check-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+.check-list li { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--text-body); }
+.check-list i { color: var(--accent); }
+.cta-contact-box { display: flex; align-items: center; gap: 16px; }
+.cta-icon {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--blue-xpale);
+  border: 1px solid var(--blue-pale);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--blue); font-size: 20px;
+}
+.cta-number { display: block; font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--text-primary); }
+.cta-label { font-size: 12px; color: var(--text-muted); }
+
+/* CTA Banner */
+.about-cta-banner { position: relative; padding: 80px 0; overflow: hidden; background: var(--blue); }
+.about-cta-bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.12); }
+.about-cta-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 48px; align-items: center; }
+.cta-tag { font-size: 13px; color: var(--accent); font-weight: 700; margin-bottom: 16px; }
+.cta-avatars { display: flex; margin-bottom: 12px; }
+.cta-avatar { width: 36px; height: 36px; border-radius: 50%; border: 2px solid #fff; margin-right: -10px; object-fit: cover; }
+.cta-rating { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.6); }
+.cta-big-num { display: block; font-family: var(--font-display); font-size: 48px; font-weight: 800; color: var(--accent); }
+.cta-big-label { font-size: 14px; color: rgba(255,255,255,0.65); }
+
+/* Stats band */
+.stats-band { position: relative; padding: 72px 0; overflow: hidden; background: var(--secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stats-band-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.stat-band-item { text-align: center; }
+.stat-band-item i { font-size: 32px; color: var(--blue); margin-bottom: 12px; display: block; }
+.stat-band-num { font-family: var(--font-display); font-size: 40px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px; }
+.stat-band-label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+
+/* Why us */
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.why-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px;
+  transition: var(--transition);
+  box-shadow: var(--shadow-card);
+}
+.why-card:hover { border-color: var(--blue-pale); transform: translateY(-4px); box-shadow: var(--shadow); }
+.why-icon { font-size: 28px; color: var(--blue); margin-bottom: 16px; }
+.why-title { font-size: 17px; color: var(--text-primary); margin-bottom: 10px; font-weight: 700; }
+.why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+
+@media (max-width: 1024px) {
+  .about-intro-grid { grid-template-columns: 1fr; gap: 48px; }
+  .ai-badge { left: 0; }
+  .about-cta-inner { grid-template-columns: 1fr 1fr; }
+  .cta-right { display: none; }
+  .stats-band-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .about-cta-inner { grid-template-columns: 1fr; }
+  .cta-left { display: none; }
+}
