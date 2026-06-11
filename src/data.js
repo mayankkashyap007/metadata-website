@@ -135,10 +135,10 @@ export const WHY_US = [
 // ── Office Gallery (images uploaded to /public folder) ──
 export const OFFICE_GALLERY = [
   { img: '/teamwork.jpeg',        caption: 'Our Team at Work' },
-  { img: '/teamwork 1.jpeg',      caption: 'Development Floor' },
-  { img: '/conference room.jpeg', caption: 'Conference Room' },
-  { img: '/general meeting.jpeg', caption: 'General Meeting Room' },
+  { img: '/teamwork1.jpeg',       caption: 'Development Floor' },
+  { img: '/conferenceroom.jpeg',  caption: 'Conference Room' },
+  { img: '/generalmeeting.jpeg',  caption: 'General Meeting Room' },
   { img: '/cabin.jpeg',           caption: "Director's Cabin" },
-  { img: '/office layout.jpeg',   caption: 'Office Layout' },
-  { img: '/working area.jpeg',    caption: 'Working Area' },
+  { img: '/officelayout.jpeg',    caption: 'Office Layout' },
+  { img: '/workingarea.jpeg',     caption: 'Working Area' },
 ];
