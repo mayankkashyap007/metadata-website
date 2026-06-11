@@ -131,3 +131,14 @@ export const WHY_US = [
   { icon: 'fa-solid fa-award', title: 'Proven Excellence', desc: 'With 25+ industry awards and 850+ delivered projects, we have the track record to back our promises.' },
   { icon: 'fa-solid fa-headset', title: '24/7 Support', desc: 'Our dedicated support team is available around the clock to resolve issues and keep your systems running seamlessly.' },
 ];
+
+// ── Office Gallery (images uploaded to /public folder) ──
+export const OFFICE_GALLERY = [
+  { img: '/teamwork.jpeg',        caption: 'Our Team at Work' },
+  { img: '/teamwork 1.jpeg',      caption: 'Development Floor' },
+  { img: '/conference room.jpeg', caption: 'Conference Room' },
+  { img: '/general meeting.jpeg', caption: 'General Meeting Room' },
+  { img: '/cabin.jpeg',           caption: "Director's Cabin" },
+  { img: '/office layout.jpeg',   caption: 'Office Layout' },
+  { img: '/working area.jpeg',    caption: 'Working Area' },
+];
