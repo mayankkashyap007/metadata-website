@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { STATS, WHY_US } from '../data';
+import { STATS, WHY_US, OFFICE_GALLERY } from '../data';
 import './About.css';
 
 function CounterNum({ value }) {
@@ -142,6 +142,29 @@ export default function About() {
                 <div className="why-icon"><i className={w.icon} /></div>
                 <h3 className="why-title">{w.title}</h3>
                 <p className="why-desc">{w.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Office Gallery ── */}
+      <section className="about-gallery-section">
+        <div className="container">
+          <div className="section-header" style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <span className="section-tag">Our Workplace</span>
+            <h2 className="section-title">A Glimpse Inside <span>Our Office</span></h2>
+            <p style={{ color: 'var(--text-muted)', maxWidth: '560px', margin: '12px auto 0' }}>
+              Where great minds collaborate to build technology that matters.
+            </p>
+          </div>
+          <div className="office-gallery-grid">
+            {OFFICE_GALLERY.map((item, i) => (
+              <div className="gallery-card" key={i}>
+                <img src={item.img} alt={item.caption} />
+                <div className="gallery-overlay">
+                  <span>{item.caption}</span>
+                </div>
               </div>
             ))}
           </div>
