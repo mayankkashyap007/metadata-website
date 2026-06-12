@@ -4,6 +4,7 @@ import {
   HERO_SLIDES, HOME_SERVICES, PORTFOLIO_TABS, PROJECTS,
   SKILLS, TESTIMONIALS, PROCESS_STEPS, ABOUT_FEATURES
 } from '../data';
+import OfficeSlider from './OfficeSlider';
 import './Home.css';
 
 /* ─── Hero Slider ─── */
@@ -180,10 +181,10 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-images">
               <div className="about-img-main">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1170&auto=format&fit=crop" alt="team" />
+                <img src="/teamwork.jpeg" alt="Our team at work" />
               </div>
               <div className="about-img-sub">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="office" />
+                <img src="/cabin.jpeg" alt="Director's cabin" />
               </div>
             </div>
             <div className="about-content">
@@ -256,6 +257,9 @@ export default function Home() {
       {/* Testimonials */}
       <Testimonials />
 
+      {/* Office Gallery Slider */}
+      <OfficeSlider />
+
       {/* Process */}
       <section className="process-section section-spacing" style={{ background: 'var(--secondary)' }}>
         <div className="container">
@@ -278,7 +282,7 @@ export default function Home() {
 
       {/* CTA Form */}
       <section className="cta-form-section section-spacing">
-        <div className="cta-form-bg" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1469&auto=format&fit=crop)` }} />
+        <div className="cta-form-bg" style={{ backgroundImage: `url(/teamwork1.jpeg)` }} />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="cta-form-grid">
             <div>
@@ -287,7 +291,7 @@ export default function Home() {
               <ContactMiniForm />
             </div>
             <div className="cta-form-image">
-              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1470&auto=format&fit=crop" alt="team" />
+              <img src="/generalmeeting.jpeg" alt="General meeting room" />
             </div>
           </div>
         </div>
